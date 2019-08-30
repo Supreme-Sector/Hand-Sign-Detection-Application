@@ -1,0 +1,1 @@
+Test data (positive and negative) will be stored in this folder as a .pickle file.

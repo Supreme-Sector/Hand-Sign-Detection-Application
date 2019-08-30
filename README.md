@@ -9,3 +9,7 @@ Separate Python scripts are needed to load the data using data_loader.py and to 
 
 Example (in Python Shell): <br>
 >>> \>>> import data_loader; training_data, test_data=data_loader.load_data(); import network; net=network.Network([19200,500,400,400,1]); net.SGD(training_data,100,50,2.0,test_data=test_data) <br>
+
+After each training session, the Network object with the largest test accuracy will be saved as a .pickle file in root. <br>
+If you want to re-train that network later on, move the file to the network_pickles folder and rename it to something unique. <br>
+After that, you can unpickle the file to retrieve the Network object and continue training with Network.SGD().

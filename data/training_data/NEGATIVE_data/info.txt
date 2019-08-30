@@ -1,0 +1,1 @@
+Negative training data (i.e., images NOT containing the hand sign) will be stored in this folder as a .pickle file.

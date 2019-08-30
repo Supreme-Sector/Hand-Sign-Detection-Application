@@ -1,0 +1,2 @@
+If there is a Network object, saved as a pickle, that you want to re-train later on, move the file to this folder
+and rename it to something unique.

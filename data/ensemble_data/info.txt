@@ -1,0 +1,1 @@
+Ensemble data contains the ouputs from each of the subnets, which can be used to train the intermediate network that will produce a final result based on those subnet outputs.

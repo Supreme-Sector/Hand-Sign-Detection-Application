@@ -1,15 +1,12 @@
 # Hand-Sign-Detection-Application
-[This repository is still a work in progress] <br>
-The code uses a simple deep feed forward neural network to detect a particular hand sign and trigger an event. <br>
-A single output neuron will give a 1 if it detects the hand sign and 0 if it doesn't. <br>
-
+The code can be used to construct a Detector object which will detect the hand sign for the letter Y <br>
+Multiple neural networks are connected together in order to analyze images <br>
 ## Usage:
-Run training_data_collector.py and test_data_collector.py to collect training and test data <br>
-Separate Python scripts are needed to load the data using data_loader.py and to create/train a network using network.py. <br>
-
-Example (in Python Shell): <br>
->>> \>>> import data_loader; training_data, test_data=data_loader.load_data(); import network; net=network.Network([19200,500,400,400,1]); net.SGD(training_data,100,50,2.0,test_data=test_data) <br>
-
-After each training session, the Network object with the largest test accuracy will be saved as a .pickle file in root. <br>
-If you want to re-train that network later on, move the file to the network_pickles folder and rename it to something unique. <br>
-After that, you can unpickle the file to retrieve the Network object and continue training with Network.SGD().
+Run `training_data_collector.py` and `test_data_collector.py` to collect training and test data <br>
+After that run `subnet_trainer.py` to generate a Network pickle <br>
+If the accuracy is high enough, save the pickle by giving it a unique name and moving it to the `network_pickles` folder. <br>
+Run `ensemble_training_data_collector.py` with the proper initialization of the variables. <br>
+Run `intermediate_network_trainer.py` <br>
+Rename and save the Network pickle. <br>
+In `y_sign_detection.py` make sure the Detector is instantiated with the appropriate sub and intermediate Network objects. <br>
+Run the script and it should return the final accuracy of the Detector. <br>

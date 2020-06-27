@@ -11,4 +11,5 @@ Rename and save the Network pickle. <br>
 In `y_sign_detection.py` make sure the Detector is instantiated with the appropriate sub and intermediate Network objects. <br>
 Run the script and it should return the final accuracy of the Detector. <br>
 ## Videos:
-https://youtu.be/GdPtevjUfzo <br>
+Part 1: https://youtu.be/GdPtevjUfzo <br>
+Part 2: Coming soon... <br>

@@ -24,7 +24,7 @@ class Detector:
         return sum((x==y) for (x, y) in test_results)
 
 
-files=["1_neural_network_87_5.pickle", "2_neural_network_82_3.pickle", "3_neural_network_80_3.pickle", "4_neural_network_83_1.pickle", "5_neural_network_87_7.pickle"]
+files=[] # List of subnet pickle names
 subnets=[]
 
 for file in files:
@@ -32,7 +32,7 @@ for file in files:
     net=cPickle.load(pickle_in)
     subnets.append(net)
 
-pickle_in=open("./network_pickles/merger_neural_network.pickle", "rb")
+pickle_in=open("./network_pickles/merger_neural_network.pickle", "rb") # Change file name to the name of your intermediate network pickle
 merger=cPickle.load(pickle_in)
 
 detector = Detector(subnets, merger)

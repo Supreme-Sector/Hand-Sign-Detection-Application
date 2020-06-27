@@ -3,7 +3,7 @@ import numpy as np
 import cv2
 import _pickle as cPickle
 
-files=["1_neural_network_87_5.pickle", "2_neural_network_82_3.pickle", "3_neural_network_80_3.pickle", "4_neural_network_83_1.pickle", "5_neural_network_87_7.pickle"]
+files=[] # List of network pickle names that will be used as subnets
 subnets=[]
 
 

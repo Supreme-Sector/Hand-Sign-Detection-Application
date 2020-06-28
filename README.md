@@ -12,4 +12,4 @@ In `y_sign_detection.py` make sure the Detector is instantiated with the appropr
 Run the script and it should return the final accuracy of the Detector. <br>
 ## Videos:
 Part 1: https://youtu.be/GdPtevjUfzo <br>
-Part 2: Coming soon... <br>
+Part 2: https://youtu.be/nhyEixTzuDg <br>

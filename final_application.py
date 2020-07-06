@@ -29,7 +29,6 @@ while True:
     cv2.imshow("Y for YouTube", frame)
     cv2.waitKey(1)
     result = detector.detect(vectorize_frame_data(simple_frame))
-    print(result)
     detector_history[i] = result
     i = (i+1) % 20
     if(sum(detector_history)>=12):
